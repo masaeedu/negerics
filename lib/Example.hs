@@ -5,7 +5,7 @@ import Data.Proxy (Proxy(..))
 import GHC.Generics (Generic, Generic1)
 import Utils (Location(..), HList(..), type ($), (^$), Optional(..))
 import Data.Description (LField, FieldExpression(..), FieldList(..), Field(..), Constructor(..), ConstructorInfo(..), DataType(..), DataTypeInfo(..))
-import Data.Context.Reify
+import Data.Context.Reify (Reify)
 
 -- ..., we can mechanically derive these for various arities
 

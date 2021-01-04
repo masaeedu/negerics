@@ -1,9 +1,9 @@
 module Data.Context.Reify where
 
-import Utils
-import Data.Context
-import Data.Description
-import GHC.Exts
+import Utils (FDep, HIndex, HList, Optional(..))
+import Data.Kind (Constraint)
+import Data.Context (DataContext(..), Cartesian(..), Semicartesian(..), Cocartesian(..), Semicocartesian(..))
+import Data.Description (DataType(..), Constructor(..), FieldList(..), Field(..), FieldExpression(..))
 
 -- Now we can interpret a data expression into a runtime representation in any suitable data context
 type Reify :: forall k pkinds datatype. HList pkinds -> datatype pkinds k -> (k -> k) -> Constraint
