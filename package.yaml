@@ -25,6 +25,7 @@ default-extensions:
 - TypeApplications
 - TypeOperators
 - MultiParamTypeClasses
+- FunctionalDependencies
 
 - ConstraintKinds
 - DataKinds
@@ -35,6 +36,9 @@ default-extensions:
 - FlexibleInstances
 - FlexibleContexts
 - DefaultSignatures
+
+- TypeFamilies
+- StandaloneKindSignatures
 
 library:
   source-dirs: lib
